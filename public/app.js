@@ -56,7 +56,7 @@ var VideoChat = {
 
   // There's not much to do in this demo if there is no media stream. So
   // let's just stop.
-  noMediaStream: function() {
+  noMediaStream: function(error) {
     logIt('No media stream for us.', error);
     // Sad trombone.
   },
