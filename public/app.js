@@ -201,7 +201,7 @@ var VideoChat = {
     logIt('<<< Received new stream from remote. Adding it...');
     VideoChat.remoteVideo = document.getElementById('remote-video');
     VideoChat.remoteVideo.srcObject = event.stream;
-    VideoChat.remoteVideo.volume = 0;
+    VideoChat.remoteVideo.volume = 100;
   }
 };
 
