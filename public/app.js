@@ -47,8 +47,9 @@ var VideoChat = {
     // Add the stream as video's srcObject. 
     // As the video has the `autoplay` attribute it will start to stream immediately.
     VideoChat.localVideo.srcObject = stream;
-    // Now we're ready to join the chat room.
-    VideoChat.socket.emit('join', 'test');
+    // Now we're ready    do to join the chat room.
+    let roomname = document.getElementById('room-name').value;
+    VideoChat.socket.emit('join', roomname);
     VideoChat.socket.on('ready', VideoChat.readyToCall);
     VideoChat.socket.on('offer', VideoChat.onOffer);
   },
