@@ -41,7 +41,7 @@ var VideoChat = {
     // Get the video element.
     VideoChat.localVideo = document.getElementById('local-video');
     // Turn the volume down to 0 to avoid echoes.
-    VideoChat.localVideo.volume = 1;
+    VideoChat.localVideo.volume = 0;
     VideoChat.localStream = stream;
     VideoChat.videoButton.setAttribute('disabled', 'disabled');
     // Add the stream as video's srcObject. 
